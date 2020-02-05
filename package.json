@@ -1,0 +1,24 @@
+{
+  "name": "lockscreen-image-saver",
+  "version": "1.0.0",
+  "description": "An Electron app that saves windows spotlight lockscreen images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lewis-munyi/lockscreen-image-saver.git"
+  },
+  "keywords": [
+    "Electron",
+    "Javascript",
+    "Desktop"
+  ],
+  "author": "Lewis Munyi",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/lewis-munyi/lockscreen-image-saver/issues"
+  },
+  "homepage": "https://github.com/lewis-munyi/lockscreen-image-saver#readme"
+}
