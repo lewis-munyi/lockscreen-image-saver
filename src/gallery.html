@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Windows Spotlight Saver</title>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/tether.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div class="overlayz">
+				<div class="overlayDoor"></div>
+				<div class="overlayContent">
+					<div class="loader">
+						<div class="inner"></div>
+					</div>
+					<div class="skip">SKIP</div>
+				</div>
+			</div>
+			<div class="overlay"></div>
+
+			<!-- Sidebar -->
+			<nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+				<ul class="nav sidebar-nav">
+					<div class="sidebar-header">
+						<div class="sidebar-brand" id="sidebar-brand">
+							<img src="https://picsum.photos/80?image=1005" alt="" /><br />
+							<a href="#" class="text-capitalize" id="username"></a><br />
+							<!--							<small>Log out</small>-->
+						</div>
+					</div>
+					<!--					<li><a href="actions.html">Home</a></li>-->
+					<li>
+						<a href="gallery.html"><i class="fa fa-picture-o fa-fw"></i> Gallery</a>
+					</li>
+					<li>
+						<a href="about.html"><i class="fa fa-info-circle fa-fw"></i> About</a>
+					</li>
+					<li>
+						<a href="#" onclick="window.openFolder()"><i class="fa fa-folder-open"></i> Open images folder</a>
+					</li>
+					<!--					<li><a href="#team">Team</a></li>-->
+					<!--					<li class="dropdown">-->
+					<!--						<a href="#works" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>-->
+					<!--						<ul class="dropdown-menu animated fadeInLeft" role="menu">-->
+					<!--							<div class="dropdown-header">Dropdown heading</div>-->
+					<!--							<li><a href="#pictures">Pictures</a></li>-->
+					<!--							<li><a href="#videos">Videos</a></li>-->
+					<!--							<li><a href="#books">Books</a></li>-->
+					<!--							<li><a href="#art">Art</a></li>-->
+					<!--							<li><a href="#awards">Awards</a></li>-->
+					<!--						</ul>-->
+					<!--					</li>-->
+					<!--					<li><a href="#services">Services</a></li>-->
+					<!--					<li><a href="#contact">Contact</a></li>-->
+					<!--					<li><a href="#followme">Follow me</a></li>-->
+				</ul>
+			</nav>
+			<!-- /#sidebar-wrapper -->
+
+			<!-- Page Content -->
+			<div id="page-content-wrapper">
+				<button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+					<span class="hamb-top"></span>
+					<span class="hamb-middle"></span>
+					<span class="hamb-bottom"></span>
+				</button>
+				<div id="snackbar"></div>
+				<div class="container">
+					<div class="row d-flex justify-content-between">
+						<h1>Gallery</h1>
+						<h2 class="refresh">
+							<i class="fa fa-refresh" id="refresh" title="Refresh"></i>
+						</h2>
+					</div>
+					<div class="row" id="grid">
+						<div class="col-lg-3">
+							<h4>No images</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /#page-content-wrapper -->
+		</div>
+		<!-- /#wrapper -->
+
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.fancybox.min.js"></script>
+		<script src="js/tether.min.js"></script>
+		<script src="js/script.js"></script>
+		<script>
+			$(document).ready(refreshImagesList());
+		</script>
+	</body>
+</html>
