@@ -1,0 +1,40 @@
+{
+	"name": "Windows-Spotlight-Saver",
+	"version": "1.0.0",
+	"description": "An Electron app that saves windows spotlight images",
+	"main": "index.js",
+	"scripts": {
+		"start": "electron index.js",
+		"pack": "electron-builder --dir",
+		"dist": "electron-builder",
+		"build": "electron-packager .  --platform=win32 --arch=x64 [optional flags...]"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lewis-munyi/lockscreen-image-saver.git"
+	},
+	"keywords": [
+		"Electron",
+		"Javascript",
+		"Desktop"
+	],
+	"author": "Lewis Munyi",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/lewis-munyi/lockscreen-image-saver/issues"
+	},
+	"homepage": "https://github.com/lewis-munyi/lockscreen-image-saver#readme",
+	"dependencies": {
+		"auto-launch": "^5.0.5",
+		"electron": "^8.0.0",
+		"electron-reload": "^1.5.0",
+		"jimp": "^0.9.3",
+		"materialize-css": "^1.0.0-rc.2",
+		"prettier": "^1.19.1",
+		"wallpaper": "^4.4.1"
+	},
+	"devDependencies": {
+		"electron-builder": "^22.3.2",
+		"electron-packager": "^14.2.0"
+	}
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Windows Spotlight Saver</title>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/tether.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/about.css" />
+	</head>
+
+	<body>
+		<div id="wrapper">
+            <div class="overlayz">
+                <div class="overlayDoor"></div>
+                <div class="overlayContent">
+                    <div class="loader">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="skip">skip</div>
+                </div>
+            </div>
+			<div class="overlay"></div>
+
+			<!-- Sidebar -->
+			<nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+				<ul class="nav sidebar-nav">
+					<div class="sidebar-header">
+						<div class="sidebar-brand" id="sidebar-brand">
+							<img src="https://picsum.photos/80?image=1005" alt="" /><br />
+							<a href="#" class="text-capitalize" id="username"></a><br />
+						</div>
+					</div>
+					<li>
+						<a href="gallery.html"><i class="fa fa-picture-o fa-fw"></i> Gallery</a>
+					</li>
+					<li>
+						<a href="about.html"><i class="fa fa-info-circle fa-fw"></i> About</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-folder-open"></i> Open images folder</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- /#sidebar-wrapper -->
+
+			<!-- Page Content -->
+			<div id="page-content-wrapper">
+				<button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+					<span class="hamb-top"></span>
+					<span class="hamb-middle"></span>
+					<span class="hamb-bottom"></span>
+				</button>
+				<div id="snackbar"></div>
+				<div class="container">
+					<div class="row d-flex justify-content-start">
+						<h1>About app</h1>
+					</div>
+					<div class="row" class="d-flex justify-content-start">
+						<div class="col-sm-12">
+							<blockquote class="blockquote">
+								<p><h3 class="pt-4">Windows Spotlight Saver</h3><span class="text-muted" id="version"></span></p>
+								<footer class="blockquote-footer">A windows app that saves Spotlight Images</footer>
+							</blockquote>
+                            <h5>
+                                <span class="badge badge-light">Electron</span> <span class="badge badge-light">Node JS</span>
+                                <span class="badge badge-secondary">Firebase(Coming soon)</span>
+                            </h5>
+							<p><h5><a href="https://gihub.com/lewis-munyi">GitHub</a></h5>- Find the project repo</p>
+							<p>
+                                <h5><a href="https://">Contribute</a></h5>
+                                <span>
+                                - Found a bug? <br>
+                                - Got a feature request? <br>
+                                - Got a unit test?<br>
+                                - Have any compliments?<br>
+                                </span>
+                            </p>
+                            <p><h5><a href="">Report Issue</a></h5>- If the issue being submitted is small I'd recommend sending a <a href="">Pull request</a> with a fix instead.</p>
+							<h5><a href="">GNU General Public License v3.0</a></h5> <br>
+                            <h5>Made with ❤️ by <a href="https://lewis-muyni.web.app">Lewis Munyi</a>.</h5>
+                            <h6>- I spend a lot of hours doing these projects. A little help could go a long way. </h6>
+                            <p class=""> <style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 10px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 10px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/lewismunyi"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /#page-content-wrapper -->
+		</div>
+		<!-- /#wrapper -->
+
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/tether.min.js"></script>
+		<script src="js/script.js"></script>
+		<script>$(document).ready($("#version").html("v"+window.getVersion()))</script>
+	</body>
+</html>
