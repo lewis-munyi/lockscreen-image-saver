@@ -1,6 +1,7 @@
 // All of the Node.js APIs are available in the preload process.
 // It has the same sandbox as a Chrome extension.
-const { ipcRenderer, electron } = require("electron");
+const { ipcRenderer, app } = require("electron");
+const appVersion = require("./package.json").version;
 const os = require("os");
 window.addEventListener("DOMContentLoaded", () => {
 	const replaceText = (selector, text) => {
@@ -31,4 +32,8 @@ window.setWallpaperImage = url => {
 
 window.loadUser = () => {
 	return os.userInfo().username;
+};
+
+window.getVersion = () => {
+	return appVersion;
 };
