@@ -1,7 +1,7 @@
 // Import modules
 const { app, BrowserWindow, Menu, ipcMain, shell, Tray } = require("electron");
 // Enable live reload for all the files inside your project directory
-require("electron-reload")(__dirname);
+// require("electron-reload")(__dirname);
 const path = require("path");
 const os = require("os");
 const fs = require("fs");
@@ -108,7 +108,7 @@ function createWindow() {
 		mainWindow.loadFile(path.join(__dirname, "src/gallery.html"));
 
 		// uncomment next line to Open the DevTools.
-		mainWindow.webContents.openDevTools();
+		// mainWindow.webContents.openDevTools();
 
 		// Emitted when the window is closed.
 		mainWindow.on("closed", () => {
