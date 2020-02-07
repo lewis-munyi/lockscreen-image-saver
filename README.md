@@ -30,7 +30,9 @@
 
 ## Getting Started
 
-Head over to the [download]() section to grab yourself a compiled version. If you're feeling nerdy follow the instructions below to learn how you can set up and compile the app yourself.
+Head over to the [download](https://github.com/lewis-munyi/lockscreen-image-saver/releases) section to grab yourself a compiled version.
+Download and extract the ZIP archive, then run the `.exe` app.
+If you're feeling nerdy follow the instructions below to learn how you can set up and compile the app yourself.
 
 ### Prerequisites
 
