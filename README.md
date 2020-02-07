@@ -30,8 +30,9 @@
 
 ## Getting Started
 
-Head over to the [download](https://github.com/lewis-munyi/lockscreen-image-saver/releases) section to grab yourself a compiled version.
-Download and extract the ZIP archive, then run the `.exe` app.
+Head over to [releases](https://github.com/lewis-munyi/lockscreen-image-saver/releases) and grab yourself the latest executable.
+Run the `.exe` app.
+
 If you're feeling nerdy follow the instructions below to learn how you can set up and compile the app yourself.
 
 ### Prerequisites
@@ -100,7 +101,13 @@ You will need these to run and set up the app
     npm run build
     ```
 
-    This will create a directory called `release-builds` which contains your compiled app.
+2. Select `ASSETS` and upload an icon
+
+3. Select `INSTALLER` and specify the relevant app details then hit `Generate installer`.
+
+4. This will create a directory called `dist/` which contains your compiled app.
+
+5. Run it!
 
 ## Built With
 

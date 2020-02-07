@@ -1,11 +1,11 @@
 {
 	"name": "Windows-Spotlight-Saver",
-	"version": "1.0.0",
-	"description": "An Electron app that saves windows spotlight images",
+	"version": "1.0.1",
+	"description": "An app that helps capture your best spotlight images",
 	"main": "index.js",
 	"scripts": {
 		"start": "electron index.js",
-		"build": "electron-packager . Windows-Spotlight-Saver-v1.0.0 --platform=win32 --arch=x64 --asar --prune=true --overwrite --out=release-builds --icon=spotlight.ico"
+		"build": "electron ./node_modules/electron-toolkit"
 	},
 	"repository": {
 		"type": "git",
@@ -30,7 +30,29 @@
 	},
 	"devDependencies": {
 		"electron": "^8.0.0",
-		"electron-packager": "^14.2.0",
-		"electron-reload": "^1.5.0"
+		"electron-builder": "^22.3.2",
+		"electron-reload": "^1.5.0",
+		"electron-toolkit": "^1.0.24"
+	},
+	"build": {
+		"appId": "com.electron.Windows-Spotlight-Saver",
+		"copyright": "Copyright © 2020 Lewis Munyi",
+		"productName": "Windows Spotlight Saver",
+		"electronVersion": "8.0.0",
+		"asar": true,
+		"directories": {
+			"app": "C:\\Users\\lewis\\workspace\\web\\lockscreen-image-saver",
+			"output": "dist"
+		},
+		"win": {
+			"target": [
+				{
+					"target": "nsis",
+					"arch": [
+						"x64"
+					]
+				}
+			]
+		}
 	}
 }
