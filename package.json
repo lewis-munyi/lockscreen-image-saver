@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "electron index.js",
-		"build": "electron-packager . --platform=win32 --arch=x64 --asar --prune=true --overwrite --out=release-builds --icon=spotlight.ico"
+		"build": "electron-packager . Windows-Spotlight-Saver-v1.0.0 --platform=win32 --arch=x64 --asar --prune=true --overwrite --out=release-builds --icon=spotlight.ico"
 	},
 	"repository": {
 		"type": "git",
