@@ -92,15 +92,13 @@ You will need these to run and set up the app
 
 ## Deployment
 
-1. `cd` into the root `/` directory
+1. Run
+
     ```
-    # If you are in the functions directory
-    cd ../
+    npm run build
     ```
-2. run
-    ```
-    firebase deploy
-    ```
+
+    This will create a directory called `release-builds` which contains your compiled app.
 
 ## Built With
 
