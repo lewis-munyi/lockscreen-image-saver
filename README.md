@@ -125,4 +125,17 @@ This project is licensed under the GNU General Public License v3.0 License - see
 -   Hat tip to ~~StackOverflow~~ anyone whose code was used.
 -   <div>Photo made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
+## Screenshots
+
+<p align="center">
+  <a href="https://lewis-munyi.web.app/portfolio">
+    <img src="src/screenshots/1.png">
+  </a>
+</p>
+<p align="center">
+  <a href="https://lewis-munyi.web.app/portfolio">
+    <img src="src/screenshots/2.png">
+  </a>
+</p>
+
 Enjoy :metal:
