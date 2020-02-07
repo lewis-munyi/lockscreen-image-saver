@@ -1,6 +1,6 @@
 // All of the Node.js APIs are available in the preload process.
 // It has the same sandbox as a Chrome extension.
-const { ipcRenderer, app } = require("electron");
+const { ipcRenderer } = require("electron");
 const appVersion = require("./package.json").version;
 const os = require("os");
 window.addEventListener("DOMContentLoaded", () => {

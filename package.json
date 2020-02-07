@@ -5,9 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "electron index.js",
-		"pack": "electron-builder --dir",
-		"dist": "electron-builder",
-		"build": "electron-packager .  --platform=win32 --arch=x64 [optional flags...]"
+		"build": "electron-packager . --platform=win32 --arch=x64 --asar --prune=true --overwrite --out=release-builds --icon=spotlight.ico"
 	},
 	"repository": {
 		"type": "git",
@@ -26,14 +24,13 @@
 	"homepage": "https://github.com/lewis-munyi/lockscreen-image-saver#readme",
 	"dependencies": {
 		"auto-launch": "^5.0.5",
-		"electron": "^8.0.0",
-		"electron-reload": "^1.5.0",
 		"jimp": "^0.9.3",
 		"prettier": "^1.19.1",
 		"wallpaper": "^4.4.1"
 	},
 	"devDependencies": {
-		"electron-builder": "^22.3.2",
-		"electron-packager": "^14.2.0"
+		"electron": "^8.0.0",
+		"electron-packager": "^14.2.0",
+		"electron-reload": "^1.5.0"
 	}
 }
