@@ -120,7 +120,6 @@ function createWindow() {
 	} else {
 		//auto-launcher started the app;
 		//this is a silent startup, notice we don't load any url here
-		console.log("App is started by AutoLaunch");
 		const iconName = "spotlight.png"; //<--remember to add an icon with this name in you apps root directory
 		const iconPath = path.join(__dirname, iconName);
 		const appIcon = new Tray(iconPath);
@@ -129,7 +128,7 @@ function createWindow() {
 		updateImagesFolder(appImgsFolder, spotlightFolder).then(
 			setTimeout(function() {
 				app.quit();
-			}, 5000)
+			}, 10000)
 		);
 	}
 }
